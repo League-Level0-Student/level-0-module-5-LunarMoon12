@@ -14,11 +14,27 @@ public class Nested_Loops_1 {
 			if (z % 2 == 0) {
 				System.out.println(z + " ");
 			}
-			for(int x = 1; x <= 100; x++) {
-				if (x % 1 == 1) {
-					System.out.println(x + " ");
-				}
+		}
+		for (int x = 1; x <= 100; x++) {
+			if (x % 1 == 1) {
+				System.out.println(x + " ");
 			}
 		}
+		for (int i = 1; i <= 500; i++) {
+			if (i % 2 == 1) {
+				System.out.println(i + " " + "This number is odd.");
+			}
+
+			if (i % 2 == 0) {
+				System.out.println(i + " " + "This number is even.");
+			}
+		}
+
+		for (int i = 7; i <= 777; i++) {
+			if (i % 7 == 0) {
+				System.out.println(i + " ");
+			}
+		}
+
 	}
 }
