@@ -13,9 +13,33 @@ public class Obedient_R0bot {
 		rob.setSpeed(100);
 		rob.setPenColor(0, 0, 0);
 		rob.show();
-		drawSquare();
-		drawTriangle();
-		drawCircle();
+
+		String color = JOptionPane.showInputDialog("What color do you want?");
+
+		if (color.equals("Red")) {
+			rob.setPenColor(255, 0, 0);
+		}
+
+		if (color.equals("Green")) {
+			rob.setPenColor(0, 255, 0);
+		}
+
+		if (color.equals("Blue")) {
+			rob.setPenColor(0, 0, 255);
+		}
+
+		String shape = JOptionPane.showInputDialog("What shape do you want?");
+
+		if (shape.equals("Square")) {
+			drawSquare();
+		}
+		if (shape.equals("Triangle")) {
+			drawTriangle();
+		}
+
+		if (shape.equals("Circle")) {
+			drawCircle();
+		}
 	}
 
 	public static void drawSquare() {
@@ -39,13 +63,4 @@ public class Obedient_R0bot {
 		}
 	}
 
-	String shape = JOptionPane.showInputDialog("What shape do you want?");
-	{
-		if (shape.equals("Square")) {
-for(int i = 0; i < 4; i++) {
-	rob.move(90);
-	rob.turn(90);
-}
-		}
-	}
 }
