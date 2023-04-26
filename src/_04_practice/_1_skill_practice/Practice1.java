@@ -48,11 +48,12 @@ public class Practice1 {
 		if (city.equals("San Diego")) {
 JOptionPane.showMessageDialog(null,"You live in America's Finest City!");
 		}
-	String car = JOptionPane.showMessageDialog(null, "My car is a silver, 4 door, sedan, with a horsepower of 174.");
+	 JOptionPane.showMessageDialog(null, "My car is a silver, 4 door, sedan, with a horsepower of 174.");
 		
 	}
 
 	void skill5() {
-
+String school = JOptionPane.showInputDialog("What is your school's name?");
+JOptionPane.showMessageDialog(null, school + " is a fantastic school!");
 	}
 }

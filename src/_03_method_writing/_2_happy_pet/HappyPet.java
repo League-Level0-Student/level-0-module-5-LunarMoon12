@@ -8,12 +8,12 @@ public class HappyPet {
 	// 0;
 	// this will be used to store the happiness of your pet
 	static int happinessLevel = 0;
-	
+	static String pet;
 
 	public static void main(String[] args) {
 		// 2. Ask the user what kind of pet they want to buy, and store their answer in
 		// a variable
-		String pet = JOptionPane.showInputDialog("What pet do you want?");
+		 pet = JOptionPane.showInputDialog("What pet do you want?");
 		// 3. REPEAT steps 4 - 7 enough times to make your pet happy!
 
 		// 4. Use showOptionDialog to ask the user what they want to do to make their
